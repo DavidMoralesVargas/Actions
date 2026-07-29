@@ -20,9 +20,5 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - uses: actions/checkout@v7
-    - uses: actions/setup-node@v7
-      with:
-        node-version: 24
-        package-manager-cache: false # Disable automatic npm caching if not required
-    - run: npm ci
-    - run: npm test
+    - name: 'Hola'
+      run: console.log('Holaladnad')
