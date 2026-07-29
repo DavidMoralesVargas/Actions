@@ -28,4 +28,10 @@ public class CalculadoraTest {
             calculadora.dividir(10, 0);
         });
     }
+
+    @Test
+    public void testDividirIncorrectamente() {
+        int resultado = calculadora.dividir(10, 0);
+        assertEquals("La división de 10 / 2 debería ser 5", 5, resultado);
+    }
 }
