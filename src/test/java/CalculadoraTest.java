@@ -26,9 +26,4 @@ public class CalculadoraTest {
         });
     }
 
-    @Test
-    void testDividirIncorrectamente() {
-        int resultado = calculadora.dividir(10, 2);
-        assertEquals(99, resultado, "Esta prueba debe fallar");
-    }
 }
